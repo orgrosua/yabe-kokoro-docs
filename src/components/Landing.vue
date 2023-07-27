@@ -501,13 +501,13 @@ const activeSites = ref(0);
 const totalDownloads = ref(0);
 
 const wp_v10 = ref({
-    downloaded: 1,
+    downloaded: 0,
 });
 const wp_v12 = ref({
     version: '1.0.0',
-    active_installs: 1,
+    active_installs: 0,
     donate_link: 'https://ko-fi.com/Q5Q75XSF7',
-    download_link: 'https://github.com/orgrosua/yabe-kokoro/tags',
+    download_link: 'https://www.dropbox.com/scl/fi/3e1onsktl4r4jbqyoy2qh/yabe-kokoro-1.0.1.zip?rlkey=nbseedqc7306u7etpexqq33mq&dl=1',
 });
 
 const HIGHLIGHTED_FEATURES = [
