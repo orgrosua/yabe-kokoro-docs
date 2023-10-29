@@ -605,7 +605,7 @@ const PRICING = [
         ],
         purchaseButton: {
             text: 'Download',
-            url: 'https://www.dropbox.com/scl/fi/3e1onsktl4r4jbqyoy2qh/yabe-kokoro-1.0.1.zip?rlkey=nbseedqc7306u7etpexqq33mq&dl=1',
+            url: 'https://wordpress.org/plugins/yabe-kokoro',
         },
     },
     {
