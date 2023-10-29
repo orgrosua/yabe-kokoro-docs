@@ -350,11 +350,11 @@
         <!-- Pricing -->
         <div id="pricing" class="block-pricing max-w:xl flex flex:column my:60 mx:20 mx:30@sm mx:40@md mx:auto@xl">
 
-            <div class="flex flex:column align-items:center mb:16">
+            <!-- <div class="flex flex:column align-items:center mb:16">
                 <div class="px:16 py:6 r:8 bg:crimson-95 fg:crimson-55 b:1|solid|crimson-65 text:center font:medium ls:2 lh:1.5">
                     <i class="fa-solid fa-gift fg:crimson pr:6"></i> <span class="ls:1 font:bold">50% off</span> until <span class="ls:1 font:bold">Sept 1</span>, with code: <code class="font:extrabold bg:white">REFRESHED-50</code>
                 </div>
-            </div>
+            </div> -->
 
             <!-- Title -->
             <h2 class="mb:22 f:36 font:semibold text:center">Pricing</h2>
