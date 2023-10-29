@@ -25,7 +25,7 @@
                     <a href="https://rosua.org/checkout/order-history" class="px:15 bg:blue-90:hover py:8:hover r:8">Account</a>
                 </div>
                 <div class="flex align-items:center">
-                    <a href="https://www.dropbox.com/scl/fi/3e1onsktl4r4jbqyoy2qh/yabe-kokoro-1.0.1.zip?rlkey=nbseedqc7306u7etpexqq33mq&dl=1" class="px:12 py:8 r:8 bg:green bg:green-40:hover fg:white">Get Yabe Kokoro</a>
+                    <a href="https://wordpress.org/plugins/yabe-kokoro" class="px:12 py:8 r:8 bg:green bg:green-40:hover fg:white">Get Yabe Kokoro</a>
                 </div>
             </nav>
             <div class="">
@@ -500,15 +500,8 @@ const happyCustomers = ref(0);
 const activeSites = ref(0);
 const totalDownloads = ref(0);
 
-const wp_v10 = ref({
-    downloaded: 1,
-});
-const wp_v12 = ref({
-    version: '1.0.0',
-    active_installs: 1,
-    donate_link: 'https://ko-fi.com/Q5Q75XSF7',
-    download_link: 'https://www.dropbox.com/scl/fi/3e1onsktl4r4jbqyoy2qh/yabe-kokoro-1.0.1.zip?rlkey=nbseedqc7306u7etpexqq33mq&dl=1',
-});
+const wp_v10 = ref({});
+const wp_v12 = ref({});
 
 const HIGHLIGHTED_FEATURES = [
     {
@@ -782,36 +775,18 @@ onBeforeMount(() => {
             console.log(err);
         });
 
-    // fetch('https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&slug=yabe-kokoro')
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error("Not 2xx response", { cause: response });
-    //         }
-
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         wp_v12.value = data;
-    //         activeSites.value += wp_v12.value.active_installs;
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //     });
-    // fetch('https://api.wordpress.org/plugins/info/1.0/yabe-kokoro.json')
-    //     .then(response => {
-    //         if (!response.ok) {
-    //             throw new Error("Not 2xx response", { cause: response });
-    //         }
-
-    //         return response.json();
-    //     })
-    //     .then(data => {
-    //         wp_v10.value = data;
-    //         totalDownloads.value += wp_v10.value.downloaded;
-    //     })
-    //     .catch(err => {
-    //         console.log(err);
-    //     });
+    fetch('https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&slug=yabe-kokoro')
+        .then(response => response.json())
+        .then(data => {
+            wp_v12.value = data;
+            activeSites.value += wp_v12.value.active_installs;
+        });
+    fetch('https://api.wordpress.org/plugins/info/1.0/yabe-kokoro.json')
+        .then(response => response.json())
+        .then(data => {
+            wp_v10.value = data;
+            totalDownloads.value += wp_v10.value.downloaded;
+        });
 });
 
 onMounted(() => {
