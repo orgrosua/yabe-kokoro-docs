@@ -668,60 +668,60 @@ const PRICING = [
         ],
         purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1214&edd_options[price_id]=2' },
     },
-    // {
-    //     duration: 'one-time',
-    //     amount: 79,
-    //     isMostPopular: false,
-    //     isEmphasized: false,
-    //     title: 'Personal',
-    //     subtitle: 'Best for blogger, individual & solopreneur',
-    //     features: [
-    //         'All features',
-    //         'All integrations',
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited personal sites'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-rotate',
-    //             text: 'Free updates'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-headset',
-    //             text: 'Standard support (first year)'
-    //         },
-    //     ],
-    //     purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1214&edd_options[price_id]=3' },
-    // },
-    // {
-    //     duration: 'one-time',
-    //     amount: 159,
-    //     isMostPopular: false,
-    //     isEmphasized: true,
-    //     title: 'Agency',
-    //     subtitle: 'Perfect For Agency Owners with high volume',
-    //     features: [
-    //         'All features',
-    //         'All integrations',
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited personal sites'
-    //         },
-    //         {
-    //             icon: 'fa-regular fa-planet-ringed',
-    //             text: 'Unlimited client sites'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-rotate',
-    //             text: 'Free updates'
-    //         },
-    //         {
-    //             icon: 'fa-solid fa-headset',
-    //             text: 'Standard support (first year)'
-    //         },
-    //     ],
-    //     purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1214&edd_options[price_id]=4' },
-    // },
+    {
+        duration: 'one-time',
+        amount: 79,
+        isMostPopular: false,
+        isEmphasized: false,
+        title: 'Personal',
+        subtitle: 'Best for blogger, individual & solopreneur',
+        features: [
+            'All features',
+            'All integrations',
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited personal sites'
+            },
+            {
+                icon: 'fa-solid fa-rotate',
+                text: 'Free updates'
+            },
+            {
+                icon: 'fa-solid fa-headset',
+                text: 'Standard support (first year)'
+            },
+        ],
+        purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1214&edd_options[price_id]=4' },
+    },
+    {
+        duration: 'one-time',
+        amount: 159,
+        isMostPopular: false,
+        isEmphasized: true,
+        title: 'Agency',
+        subtitle: 'Perfect For Agency Owners with high volume',
+        features: [
+            'All features',
+            'All integrations',
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited personal sites'
+            },
+            {
+                icon: 'fa-regular fa-planet-ringed',
+                text: 'Unlimited client sites'
+            },
+            {
+                icon: 'fa-solid fa-rotate',
+                text: 'Free updates'
+            },
+            {
+                icon: 'fa-solid fa-headset',
+                text: 'Standard support (first year)'
+            },
+        ],
+        purchaseButton: { url: 'https://rosua.org/checkout/?edd_action=add_to_cart&download_id=1214&edd_options[price_id]=3' },
+    },
 ];
 
 const selectedFeatureIndex = ref(0);
